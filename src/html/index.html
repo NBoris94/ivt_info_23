@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & OpenGraph -->
+    <title>Главная страница</title>
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/assets/images/og.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="">
+
+    <!-- Favicon -->
+    @@include('layout/_favicon.html')
+
+    <!-- Preload Fonts -->
+    @@include('layout/_fonts.html')
+
+    <!-- Styles -->
+    @@include('layout/_styles.html')
+</head>
+<body>
+    <!-- Header -->
+    @@include('layout/_header.html')
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Offer -->
+        <section class="offer">
+            <div class="container">
+                <div class="offer__content">
+                    <h1 class="offer__title h1">Купите автомобиль дешевле на 60%*</h1>
+                    <p class="offer__text text-info">Привезем автомобиль под ключ со всеми документами. Подбор автомобиля под любой запрос БЕСПЛАТНО</p>
+                    <button class="offer__btn btn reset-btn" type="button">Оставить заявку</button>
+                    <div class="offer__img">
+                        <picture>
+                            <!-- <source srcset="./assets/images/offer.avif" type="image/avif">
+                            <source srcset="./assets/images/offer.webp" type="image/webp"> -->
+                            <img src="./assets/images/offer.png" alt="Изображение автомобиля">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Offer -->
+        <!-- Advanced -->
+        <section class="advanced">
+            <div class="container">
+                <div class="advanced__group">
+                    <h2 class="advanced__title h2">Поможем вам выгодно купить и привезти автомобиль в любую точку России</h2>
+                    <p class="advanced__text text-info text-info_md">Предлагаем Вам купить автомобиль дешевле и лучше, но за тот же бюджет</p>
+                    <button class="advanced__btn btn reset-btn" type="button">Оставить заявку</button>
+                </div>
+                <div class="advanced__cards">
+                    <article class="advanced-card">
+                        <h3 class="advanced-card__title h3">С пробегом</h3>
+                        <p class="advanced-card__text text">Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на Авито и Авто.ру</p>
+                        <div class="advanced-card__img">
+                            <picture>
+                                <!-- <source srcset="./assets/images/advanced/1.avif" type="image/avif"> -->
+                                <!-- <source srcset="./assets/images/advanced/1.webp" type="image/webp"> -->
+                                <img src="./assets/images/advanced/1.png" alt="Ключи">
+                            </picture>
+                        </div>
+                    </article>
+                    <article class="advanced-card">
+                        <h3 class="advanced-card__title h3">Новые</h3>
+                        <p class="advanced-card__text text">Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной цены на Авито и Авто.ру</p>
+                        <div class="advanced-card__img">
+                            <picture>
+                                <!-- <source srcset="./assets/images/advanced/2.avif" type="image/avif"> -->
+                                <!-- <source srcset="./assets/images/advanced/2.webp" type="image/webp"> -->
+                                <img src="./assets/images/advanced/2.png" alt="Красная машина">
+                            </picture>
+                        </div>
+                    </article>
+                    <article class="advanced-card">
+                        <h3 class="advanced-card__title h3">Под ваш бюджет</h3>
+                        <p class="advanced-card__text text">Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной цены на Авито и Авто.ру</p>
+                        <div class="advanced-card__img">
+                            <picture>
+                                <!-- <source srcset="./assets/images/advanced/3.avif" type="image/avif"> -->
+                                <!-- <source srcset="./assets/images/advanced/3.webp" type="image/webp"> -->
+                                <img src="./assets/images/advanced/3.png" alt="Рейтинг">
+                            </picture>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    @@include('layout/_footer.html')
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    @@include('layout/_scripts.html')
+</body>
+</html>

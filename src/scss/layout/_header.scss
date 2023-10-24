@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+
+    &__social {
+        margin-left: auto;
+    }
+
+    &__contacts {
+        margin-left: 32px;
+    }
+}
