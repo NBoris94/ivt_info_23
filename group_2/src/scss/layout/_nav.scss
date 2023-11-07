@@ -1,0 +1,18 @@
+.nav {
+    &__logo {
+        width: 60px;
+    }
+}
+
+.menu {
+    &__link {
+        color: var(--text-color);
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: 0.32px;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: fade-in-top 0.3s 1 ease-out 0.7s forwards;
+
+    &__social {
+        margin-left: auto;
+    }
+
+    &__contacts {
+        margin-left: 32px;
+    }
+}
