@@ -11,7 +11,7 @@
     opacity: 1;
     pointer-events: all;
     transition: all 0.3s ease-in-out;
-    
+
     &[aria-hidden="true"] {
         opacity: 0;
         pointer-events: none;
@@ -62,5 +62,13 @@
                 stroke: #fff
             }
         }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__content {
+        margin-top: 40px;
     }
 }

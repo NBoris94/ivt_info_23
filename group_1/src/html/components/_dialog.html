@@ -14,7 +14,55 @@
         <h2 class="dialog__title h2" id="dialog-request-title-id">Оставить заявку</h2>
         <!-- 6. Dialog content -->
         <div class="dialog__content">
-            <p>123</p>
+
+            <!-- Request -->
+            <div class="request">
+                <form class="request-form form">
+                    <div class="form__group">
+                        <label class="form__label form__label_error text-info" for="name">Имя</label>
+                        <input
+                            class="form__input form__input_error"
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Иван"
+                            data-empty-message="Поле обязательно для заполнения"
+                            required
+                        >
+                        <span class="form__error">Ошибка</span>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label text-info" for="phone">Телефон</label>
+                        <input class="form__input" type="email" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label text-info" for="car">Марка автомобиля</label>
+                        <select class="form__select" name="car" id="car">
+                            <option value="0">Выберите марку</option>
+                            <option value="1">Audi</option>
+                            <option value="2">BMW</option>
+                        </select>
+                        <span class="form__arrow"></span>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label text-info" for="comment">Комментарий</label>
+                        <textarea class="form__textarea" name="comment" id="comment" placeholder="Напишите ваши вопросы"></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label class="text" for="agree">Согласие с <a href="#">политикой конфиденциальности</a>.</label>
+                        </div>
+                    </div>
+
+                    <button class="form__submit btn reset-btn" type="submit">Отправить</button>
+                </form>
+            </div>
+            <!-- End Request -->
+
         </div>
     </div>
 </div>

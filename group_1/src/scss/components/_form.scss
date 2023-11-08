@@ -1,0 +1,155 @@
+.form {
+    position: relative;
+    width: 100%;
+
+    &__group {
+        position: relative;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 30px;
+
+        &_error {
+            color: rgb(209, 0, 0);
+        }
+    }
+
+    &__input {
+        padding: 18px 30px;
+        width: 100%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        border-radius: 8px;
+        border: 1px solid #C1C1C1;
+
+        &::placeholder {
+            color: #D9D9D9;
+        }
+
+        &_error {
+            color: rgb(209, 0, 0);
+            border-color: rgb(209, 0, 0);
+        }
+
+        &:valid {
+            color: green;
+            border-color: green;
+        }
+    }
+
+    &__select {
+        padding: 18px 27px;
+        width: 100%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        border-radius: 8px;
+        border: 1px solid #C1C1C1;
+        appearance: none;
+    }
+
+    &__textarea {
+        padding: 18px 30px;
+        width: 100%;
+        height: 150px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        border-radius: 8px;
+        border: 1px solid #C1C1C1;
+        resize: none;
+    }
+
+    &__submit {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background-color: #000;
+
+        &::before, &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 1px;
+            height: 10px;
+            background-color: #000;
+            transform-origin: center bottom;
+            content: '';
+        }
+
+        &::before {
+            transform: rotate(30deg);
+        }
+
+        &::after {
+            transform: rotate(-30deg);
+        }
+    }
+
+    &__error {
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 30px;
+        font-size: 12px;
+        line-height: 100%;
+        color: rgb(209, 0, 0);
+    }
+}
+
+.custom-checkbox {
+    input {
+        display: none;
+    }
+
+    input:checked + label::after {
+        opacity: 1;
+    }
+
+    label {
+        position: relative;
+        display: block;
+        padding-left: 30px;
+
+        &::before {
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            content: '';
+        }
+
+        &::after {
+            position: absolute;
+            top: 6px;
+            left: 3px;
+            width: 14px;
+            height: 14px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+            opacity: 0;
+            content: '';
+        }
+    }
+}
