@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +23,7 @@
     <!-- Styles -->
     @@include('layout/_styles.html')
 </head>
+
 <body>
     <!-- Header -->
     @@include('layout/_header.html')
@@ -29,77 +31,137 @@
 
     <!-- Main -->
     <main class="main">
-        
-<!-- Warranty -->
-<section class="warranty">
-    <div class="container">
-        <h2 class="warranty__title h2">Наши гарантии</h2>
-    <ul class="warranty__list reset-list">
-        <li>
-            <div class="warranty-card">
-                <div class="warranty-card__icon">
-                    <img src="./assets/images/warranty/1.svg" alt="Иконка 1">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title h1">Купите автомобиль дешевле на 60%*</h1>
+                <p class="hero__text text-info">Привезем автомобиль под ключ со всеми документами. Подбор автомобиля под
+                    любой запрос БЕСПЛАТНО</p>
+                <button class="hero__cta btn reset-btn">Оставить заявку</button>
+                <div class="hero__img">
+                    <picture>
+                        <img src="./assets/images/car.png" alt="Изображение автомобиля">
+                    </picture>
                 </div>
-                <p class="warranty-card__text text">100% возврат предоплаты</p>
             </div>
-        </li>
-        <li>
-            <div class="warranty-card">
-                <div class="warranty-card__icon">
-                    <img src="./assets/images/warranty/2.svg" alt="Иконка 1">
+        </section>
+        <!-- End Hero -->
+
+        <section class="offer">
+            <div class="container">
+                <div class="offer__group">
+                    <h2 class="offer__title h2">Поможем вам выгодно купить и привезти автомобиль в любую точку России
+                    </h2>
+                    <p class="offer__text text-primary">Предлагаем Вам купить автомобиль дешевле и лучше, но за тот же
+                        бюджет</p>
+                    <button class="offer__cta btn reset-btn">Оставить заявку</button>
+                    <div class="offer__cards">
+                        <div class="offer-card">
+                            <p class="offer-card__title h3">С пробегом</p>
+                            <p class="offer-card__text text">Предлагаем купить автомобиль дешевле до 60%, от рыночной
+                                цены на Авито и Авто.ру</p>
+                            <div class="offer-card__img">
+                                <picture><img src="./assets/images/offer/1.png" alt="Ключ от автомобиля"></picture>
+                            </div>
+                        </div>
+                        <div class="offer-card">
+                            <p class="offer-card__title h3">Новые</p>
+                            <p class="offer-card__text text">Предлагаем Вам купить автомобиль дешевле до 60%, от
+                                рыночной ценына Авито и Авто.ру</p>
+                            <div class="offer-card__img">
+                                <picture><img src="./assets/images/offer/2.png" alt="Автомобиль"></picture>
+                            </div>
+                        </div>
+                        <div class="offer-card">
+                            <p class="offer-card__title h3">Под ваш бюджет</p>
+                            <p class="offer-card__text text">Предлагаем Вам купить автомобиль дешевле до 60%, от
+                                рыночной ценына Авито и Авто.ру</p>
+                            <div class="offer-card__img">
+                                <picture><img src="./assets/images/offer/3.png" alt="Рейтинг"></picture>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="warranty-card__text text">Работаем по договору</p>
+
             </div>
-        </li>
-        <li>
-            <div class="warranty-card">
-                <div class="warranty-card__icon">
-                    <img src="./assets/images/warranty/3.svg" alt="Иконка 1">
+
+        </section>
+
+        <!-- Warranty -->
+        <section class="warranty">
+            <div class="container">
+                <h2 class="warranty__title h2">Наши гарантии</h2>
+                <ul class="warranty__list reset-list">
+                    <li>
+                        <div class="warranty-card">
+                            <div class="warranty-card__icon">
+                                <img src="./assets/images/warranty/1.svg" alt="Иконка 1">
+                            </div>
+                            <p class="warranty-card__text text">100% возврат предоплаты</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="warranty-card">
+                            <div class="warranty-card__icon">
+                                <img src="./assets/images/warranty/2.svg" alt="Иконка 1">
+                            </div>
+                            <p class="warranty-card__text text">Работаем по договору</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="warranty-card">
+                            <div class="warranty-card__icon">
+                                <img src="./assets/images/warranty/3.svg" alt="Иконка 1">
+                            </div>
+                            <p class="warranty-card__text text">Договор без мелкого шрифта</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="warranty-card">
+                            <div class="warranty-card__icon">
+                                <img src="./assets/images/warranty/4.svg" alt="Иконка 1">
+                            </div>
+                            <p class="warranty-card__text text">Оплата в кассу нашего автосалона или на р/с компании</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="warranty-card">
+                            <div class="warranty-card__icon">
+                                <img src="./assets/images/warranty/5.svg" alt="Иконка 1">
+                            </div>
+                            <p class="warranty-card__text text">Качество автомобиля</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="warranty-card">
+                            <div class="warranty-card__icon">
+                                <img src="./assets/images/warranty/6.svg" alt="Иконка 1">
+                            </div>
+                            <p class="warranty-card__text text">На всех этапах сделки - автомобили застрахованы</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="warranty__row">
+                    <p class="warranty__text text-primary">Вы можете убедиться в прозрачности сделки скачав
+                        предварительный договор</p>
+                    <a class="warranty__doc reset-link" href="#" download>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#F50E30">
+                                <path
+                                    d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7 10L12 15L17 10" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 15V3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        Скачать пример договора
+                    </a>
                 </div>
-                <p class="warranty-card__text text">Договор без мелкого шрифта</p>
             </div>
-        </li>
-        <li>
-            <div class="warranty-card">
-                <div class="warranty-card__icon">
-                    <img src="./assets/images/warranty/4.svg" alt="Иконка 1">
-                </div>
-                <p class="warranty-card__text text">Оплата в кассу нашего автосалона или на р/с компании</p>
-            </div>
-        </li>
-        <li>
-            <div class="warranty-card">
-                <div class="warranty-card__icon">
-                    <img src="./assets/images/warranty/5.svg" alt="Иконка 1">
-                </div>
-                <p class="warranty-card__text text">Качество автомобиля</p>
-            </div>
-        </li>
-        <li>
-            <div class="warranty-card">
-                <div class="warranty-card__icon">
-                    <img src="./assets/images/warranty/6.svg" alt="Иконка 1">
-                </div>
-                <p class="warranty-card__text text">На всех этапах сделки - автомобили застрахованы</p>
-            </div>
-        </li>
-    </ul>
-    <div class="warranty__row">
-        <p class="warranty__text text-primary">Вы можете убедиться в прозрачности сделки скачав предварительный договор</p>
-        <a class="warranty__doc reset-link" href="#" download>
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#F50E30">
-                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M7 10L12 15L17 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12 15V3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </span>
-            Скачать пример договора
-        </a>
-    </div>
-    </div>
-</section>
-<!-- End Warranty -->
+        </section>
+        <!-- End Warranty -->
 
     </main>
     <!-- End Main -->
@@ -111,4 +173,5 @@
     <!-- Scripts -->
     @@include('layout/_scripts.html')
 </body>
+
 </html>

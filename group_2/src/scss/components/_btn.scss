@@ -1,0 +1,16 @@
+.btn {
+    display: inline-block;
+    padding: 18px 54.5px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--text-color-light);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+
+    &:hover {
+        color: var(--text-color);
+        background-color: var(--text-color-light);
+    }
+}

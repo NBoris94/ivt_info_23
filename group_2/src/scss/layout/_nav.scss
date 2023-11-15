@@ -1,10 +1,21 @@
 .nav {
+    display: flex;
+    align-items: center;
+
     &__logo {
         width: 60px;
+    }
+
+    &__menu {
+        margin-left: 170px;
     }
 }
 
 .menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
     &__link {
         color: var(--text-color);
         font-size: 16px;

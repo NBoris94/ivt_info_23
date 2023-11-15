@@ -1,7 +1,23 @@
+.text {
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
 .text-primary {
     margin: 0;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 133.333%;
+}
+
+.text-info {
+    margin: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
 }
