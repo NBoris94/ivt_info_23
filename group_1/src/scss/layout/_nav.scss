@@ -39,41 +39,95 @@
             }
         }
     }
-}
 
-.social {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-
-    &__link {
-        & > svg {
-            fill: var(--text-color);
-            transition: all 0.2s ease-in-out;
-        }
-
-        &:hover {
-            & > svg {
-                fill: var(--primary-color);
-            }
-        }
+    &__burger {
+        display: none;
     }
 }
 
-.contacts {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 4px;
+@media (max-width: $tablet-bp) {
+    .nav {
+        &__menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            flex-direction: column;
+            width: 375px;
+            padding: 40px 0 150px 0;
+            background-color: var(--bg-color);
+            box-shadow: 3px 3px 10px rgb(0 0 0 / 0.1);
+            transition: opacity 0.2s ease-in-out;
+            opacity: 0;
+            pointer-events: none;
 
-    &__link {
-        color: var(--text-color);
-        transition: all 0.2s ease-in-out;
+            .menu__link {
+                font-size: 24px;
+            }
+        }
 
-        &:hover {
-            color: var(--primary-color);
+        &__burger {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    .menu {
+        &_active {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    .toggle-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+
+        span {
+            position: relative;
+            width: 100%;
+            height: 2px;
+            background-color: #262626;
+            transition: background-color 0.2s ease-in-out;
+            border-radius: 2px;
+
+            &::before, &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #262626;
+                transform-origin: left center;
+                transition: transform 0.2s ease-in-out;
+                content: '';
+            }
+
+            &::before {
+                transform: translateY(6px);
+            }
+
+            &::after {
+                transform: translateY(-6px);
+            }
+        }
+
+        &_active {
+            span {
+                background-color: transparent;
+
+                &::before {
+                    transform: translateY(8.5px) rotate(-45deg);
+                }
+
+                &::after {
+                    transform: translateY(-8.5px) rotate(45deg);
+                }
+            }
         }
     }
 }

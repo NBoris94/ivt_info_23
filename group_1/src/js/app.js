@@ -1,4 +1,9 @@
-import A11yDialog from 'a11y-dialog'
+import menuInit from "./modules/menu"
+import requestDialogInit from "./modules/request-dialog"
 
-const container = document.querySelector('#dialog-request')
-const dialog = new A11yDialog(container)
+const init = () => {
+    requestDialogInit()
+    menuInit()
+}
+
+init()

@@ -22,7 +22,12 @@
 @import './components/content';
 
 // Layout
-@import './layout/**/*.scss';
+@import './layout/container';
+@import './layout/section';
+@import './layout/page';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/nav';
 
 // Pages
 @import './pages/**/*.scss';
